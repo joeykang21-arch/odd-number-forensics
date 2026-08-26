@@ -1,0 +1,7 @@
+﻿python : # matched: 56
+At line:1 char:1
++ python read_gamers.py "$A\audit-control.jsonl" odd --grep paused --co ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (# matched: 56:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
