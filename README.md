@@ -1,4 +1,4 @@
-# Odd Number environment — Model Forensics SPAR take-home
+# Odd Number environment
 
 Experiments on the [Odd Number environment](https://www.lesswrong.com/posts/LhXW8ziwnn7Dd8edm/a-toy-environment-for-exploring-reasoning-about-reward):
 the user asks for an even number while an in-context `<_grading>` tag rewards odd
