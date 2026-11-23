@@ -1,6 +1,8 @@
 # Why Does the Model Output an Odd Number?
 
-Prompt-level experiments on the [Odd Number environment](https://www.lesswrong.com/posts/LhXW8ziwnn7Dd8edm/a-toy-environment-for-exploring-reasoning-about-reward), where a user asks for an even number but an in-context `<_grading>` block rewards only odd numbers. DeepSeek V4 Flash, 3,025 rollouts, full unsummarized chain of thought saved for every rollout.
+Experiments on the [Odd Number environment](https://www.lesswrong.com/posts/LhXW8ziwnn7Dd8edm/a-toy-environment-for-exploring-reasoning-about-reward), where a user asks for an even number but an in-context `<_grading>` block rewards only odd numbers. DeepSeek V4 Flash was used as the reasoning model and full unsummarized chain of thoughts were saved for every rollout.
+
+AI use disclaimer: AI was heavily used during the coding process but results were spot checked by hand. AI also assisted in the write up.
 
 **Read the write-up: [WRITEUP.md](WRITEUP.md)**
 
@@ -8,9 +10,9 @@ Prompt-level experiments on the [Odd Number environment](https://www.lesswrong.c
 
 On the bare prompt the model games (answers odd) 89 to 96% of the time. It treats the prompt as evidence about which objective is actually enforced:
 
-1. **Price and enforceability move it; stated probability does not.** Partial credit cuts gaming from 90% to 53%. A one-sentence review threat cuts it from 92% to 18%; naming "a regex script" as the reviewer raises it to 36%, and naming "a human" drops it to 0%. Stated audit rates from 25% to 100% all give 8 to 12%.
-2. **Its stated reason is not the cause.** "Auditing is currently paused" does not increase gaming over a neutral audit mention (66% vs 77%), yet 84% of gaming CoTs cite the pause versus 39% of obedient ones.
-3. **Test-awareness language is saturated.** 76 to 100% of CoTs in every condition, while gaming spans 0 to 96%.
+1. **The type of checker and reward price affect gaming rates but stated probability does not.** Partial credit cuts gaming from 90% to 53%. A one-sentence review threat cuts it from 92% to 18%. Naming "a regex script" as the reviewer raises it to 36%, but naming "a human" drops it to 0%. Stated audit rates from 25% to 100% all give 8 to 12% without specifying the auditor.
+2. **Its stated reason is not necessarily the cause.** Stating "auditing is currently paused" does not increase gaming from a mention of an audit (66% vs 77%), yet 84% of gaming CoTs cite the pause as their reason versus 39% of obedient ones.
+3. **Situational awareness was saturated and did not affect gaming.** 76 to 100% of CoTs mentioned the possibility of this being a test environment in every condition, while gaming spanned 0 to 96%.
 
 ![Gaming rate by condition](figures/gaming_by_condition.png)
 
