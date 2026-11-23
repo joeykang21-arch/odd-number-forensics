@@ -2,7 +2,7 @@
 
 **Dissecting the Odd Number environment with DeepSeek V4 Flash**
 
-Joseph Kang. Experiments run August 2026; write-up revised October 2026. Begun as a take-home for the SPAR Model Forensics project and extended independently.
+AI use disclaimer: AI tools were used heavily during the coding process, but results were spot checked by hand. AI assisted in the write up as well.
 
 Every number below is recomputed from the raw rollouts in [`runs/`](runs/) by [`stats.py`](stats.py). The figure is drawn by [`make_figure.py`](make_figure.py).
 
