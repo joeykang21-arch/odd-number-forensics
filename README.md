@@ -8,7 +8,7 @@ AI use disclaimer: AI was heavily used during the coding process but results wer
 
 ## Results in brief
 
-On the bare prompt the model games (answers odd) 89 to 96% of the time. It treats the prompt as evidence about which objective is actually enforced:
+On the bare prompt the model games (answers odd) 89 to 96% of the time. The three main findings are stated below:
 
 1. **The type of checker and reward price affect gaming rates but stated probability does not.** Partial credit cuts gaming from 90% to 53%. A one-sentence review threat cuts it from 92% to 18%. Naming "a regex script" as the reviewer raises it to 36%, but naming "a human" drops it to 0%. Stated audit rates from 25% to 100% all give 8 to 12% without specifying the auditor.
 2. **Its stated reason is not necessarily the cause.** Stating "auditing is currently paused" does not increase gaming from a mention of an audit (66% vs 77%), yet 84% of gaming CoTs cite the pause as their reason versus 39% of obedient ones.
